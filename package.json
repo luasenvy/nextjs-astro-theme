@@ -2,7 +2,12 @@
   "name": "astrolus",
   "description": "Nextjs - Tailwind Astrolus Theme",
   "version": "1.0.0",
-  "private": true,
+  "author": {
+    "name": "luasenvy",
+    "email": "luas.envy@gmail.com",
+    "url": "https://www.luas.kr"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "rm -rf .next && next build",

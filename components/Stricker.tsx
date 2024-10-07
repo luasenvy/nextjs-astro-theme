@@ -1,7 +1,9 @@
+import Link from "./ViewTransitionLink";
+
 export default function Sticker() {
   return (
     <div className="fixed inset-x-6 bottom-6 z-40 mx-auto w-max">
-      <a
+      <Link
         href="https://tailus.gumroad.com/l/astls-premium"
         target="_blank"
         className="flex gap-3 rounded-2xl border border-yellow-900/30 bg-gradient-to-br from-white/50 to-yellow-100 p-3 shadow-2xl shadow-yellow-900/50 backdrop-blur-xl dark:border-white/10 dark:from-gray-800 dark:to-black/70 dark:shadow-primary/50"
@@ -22,7 +24,7 @@ export default function Sticker() {
           {" "}
           Upgrade to Premium
         </span>
-      </a>
+      </Link>
     </div>
   );
 }

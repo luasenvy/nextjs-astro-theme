@@ -1,5 +1,7 @@
 import Container from "./Container";
 
+import Link from "@/components/ViewTransitionLink";
+
 export default function Blog() {
   return (
     <div id="latests" className="-mt-28 pt-28">
@@ -32,9 +34,9 @@ export default function Blog() {
               <p className="mt-6 mb-8 text-gray-600 dark:text-gray-300">
                 Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
               </p>
-              <a className="inline-block" href="#">
+              <Link className="inline-block" href="#">
                 <span className="text-info dark:text-blue-300">Read more</span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
@@ -55,9 +57,9 @@ export default function Blog() {
               <p className="mt-6 mb-8 text-gray-600 dark:text-gray-300">
                 Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
               </p>
-              <a className="inline-block" href="#">
+              <Link className="inline-block" href="#">
                 <span className="text-info dark:text-blue-300">Read more</span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
@@ -78,9 +80,9 @@ export default function Blog() {
               <p className="mt-6 mb-8 text-gray-600 dark:text-gray-300">
                 Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
               </p>
-              <a className="inline-block" href="#">
+              <Link className="inline-block" href="#">
                 <span className="text-info dark:text-blue-300">Read more</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

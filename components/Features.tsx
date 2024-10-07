@@ -1,5 +1,7 @@
 import Container from "./Container";
 
+import Link from "./ViewTransitionLink";
+
 export default function Features() {
   return (
     <div id="features" className="-mt-28 pt-28">
@@ -46,7 +48,10 @@ export default function Features() {
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <a href="#" className="flex items-center justify-between group-hover:text-secondary">
+              <Link
+                href="#"
+                className="flex items-center justify-between group-hover:text-secondary"
+              >
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +65,7 @@ export default function Features() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
@@ -81,7 +86,10 @@ export default function Features() {
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <a href="#" className="flex items-center justify-between group-hover:text-secondary">
+              <Link
+                href="#"
+                className="flex items-center justify-between group-hover:text-secondary"
+              >
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +103,7 @@ export default function Features() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
@@ -116,7 +124,10 @@ export default function Features() {
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <a href="#" className="flex items-center justify-between group-hover:text-secondary">
+              <Link
+                href="#"
+                className="flex items-center justify-between group-hover:text-secondary"
+              >
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +141,7 @@ export default function Features() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
@@ -151,7 +162,10 @@ export default function Features() {
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <a href="#" className="flex items-center justify-between group-hover:text-secondary">
+              <Link
+                href="#"
+                className="flex items-center justify-between group-hover:text-secondary"
+              >
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +179,7 @@ export default function Features() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

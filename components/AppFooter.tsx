@@ -1,6 +1,6 @@
-import Link from "next/link";
-
 import Container from "./Container";
+
+import Link from "./ViewTransitionLink";
 
 export default function Footer() {
   return (

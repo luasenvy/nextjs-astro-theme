@@ -3,10 +3,12 @@
 import "./AppHeader.css";
 
 import classnames from "classnames";
-import Link from "next/link";
+
 import { useState } from "react";
 
 import Container from "./Container";
+
+import Link from "@/components/ViewTransitionLink";
 
 const links = [
   {

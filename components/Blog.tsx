@@ -1,6 +1,6 @@
 import Container from "./Container";
 
-import Link from "@/components/ViewTransitionLink";
+import Link from "next/link";
 
 export default function Blog() {
   return (

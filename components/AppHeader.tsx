@@ -8,7 +8,7 @@ import { useState } from "react";
 
 import Container from "./Container";
 
-import Link from "@/components/ViewTransitionLink";
+import Link from "next/link";
 
 const links = [
   {

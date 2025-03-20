@@ -1,19 +1,28 @@
 import "@/styles/global.css";
 
-import AppFooter from "@/components/AppFooter";
-import AppHeader from "@/components/AppHeader";
+import { Urbanist } from "next/font/google";
+
+import { AppFooter } from "@/components/AppFooter";
+import { AppHeader } from "@/components/AppHeader";
 
 export const metadata = {
   title: "Astrolus",
   description: "Astrolus Template",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+const urbanist = Urbanist({
+  preload: true,
+  display: "swap",
+  subsets: ["latin"],
+  fallback: ["sans-serif"],
+});
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`bg-white dark:bg-gray-900`}>
+      <body className={`bg-white dark:bg-gray-900 ${urbanist.className}`}>
         <AppHeader />
-        <main className="space-y-40 mb-40">{children}</main>
+        <main className="mb-40 space-y-40">{children}</main>
         <AppFooter />
       </body>
     </html>

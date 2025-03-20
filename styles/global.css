@@ -1,8 +1,23 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
-html {
-  overflow-x: hidden;
-  scroll-behavior: smooth !important;
+@theme {
+  --color-primary : var(--color-indigo-600);
+  --color-secondary : var(--color-orange-600);
+  --color-info : var(--color-blue-600);
+}
+
+@layer base {
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(24 9.8% 10% / .3);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
 }

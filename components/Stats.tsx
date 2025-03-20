@@ -1,14 +1,18 @@
+import Image from "next/image";
+
 import Container from "./Container";
 
-export default function Stats() {
+import Pie from "@/public/images/pie.svg";
+
+export async function Stats() {
   return (
-    <div id="stats" className="-mt-28 pt-28">
+    <div id="solution">
       <Container>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          className="w-6 h-6 text-sky-500"
+          className="h-6 w-6 text-sky-500"
         >
           <path
             fillRule="evenodd"
@@ -22,16 +26,9 @@ export default function Stats() {
           />
         </svg>
 
-        <div className="space-y-6 justify-between text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
+        <div className="flex-row-reverse justify-between space-y-6 text-gray-600 md:flex md:gap-6 md:space-y-0 lg:items-center lg:gap-12">
           <div className="md:5/12 lg:w-1/2">
-            <img
-              src="./images/pie.svg"
-              alt="image"
-              loading="lazy"
-              width=""
-              height=""
-              className="w-full"
-            />
+            <Image src={Pie} alt="image" loading="lazy" className="w-full" />
           </div>
           <div className="md:7/12 lg:w-1/2">
             <h2 className="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
@@ -43,14 +40,14 @@ export default function Stats() {
               Vitae error, quaerat officia delectus voluptatibus explicabo quo pariatur impedit, at
               reprehenderit aliquam a ipsum quas voluptatem. Quo pariatur asperiores eum amet.
             </p>
-            <div className="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
+            <div className="space-y-4 divide-y divide-gray-100 dark:divide-gray-800">
               <div className="mt-8 flex gap-4 md:items-center">
-                <div className="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
+                <div className="flex h-12 w-12 gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="w-6 h-6 m-auto text-indigo-500 dark:text-indigo-400"
+                    className="m-auto h-6 w-6 text-indigo-500 dark:text-indigo-400"
                   >
                     <path
                       fillRule="evenodd"
@@ -60,7 +57,7 @@ export default function Stats() {
                   </svg>
                 </div>
                 <div className="w-5/6">
-                  <h3 className="font-semibold text-lg text-gray-700 dark:text-indigo-300">
+                  <h3 className="text-lg font-semibold text-gray-700 dark:text-indigo-300">
                     Chat Anytime
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
@@ -68,13 +65,13 @@ export default function Stats() {
                   </p>
                 </div>
               </div>
-              <div className="pt-4 flex gap-4 md:items-center">
-                <div className="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">
+              <div className="flex gap-4 pt-4 md:items-center">
+                <div className="flex h-12 w-12 gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="w-6 h-6 m-auto text-teal-600 dark:text-teal-400"
+                    className="m-auto h-6 w-6 text-teal-600 dark:text-teal-400"
                   >
                     <path
                       fillRule="evenodd"
@@ -84,7 +81,7 @@ export default function Stats() {
                   </svg>
                 </div>
                 <div className="w-5/6">
-                  <h3 className="font-semibold text-lg text-gray-700 dark:text-teal-300">
+                  <h3 className="text-lg font-semibold text-gray-700 dark:text-teal-300">
                     Real Time Location
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">

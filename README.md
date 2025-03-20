@@ -1,12 +1,19 @@
+# astrolus
+
+A page template built with astro and tailwindcss using tailus blocks.
+
 # nextjs-astrolus
+
+![Tailus astro based theme](./public/astrolus-light.png)
+![Tailus astro based dark theme](./public/astrolus-dark.png)
 
 [Astrolus Theme](https://github.com/Tailus-UI/astro-theme) for [Next.js](https://nextjs.org/)<sub>(14+ App Router)</sub>
 
 ## Tested Environment
 
 - debian - bookworm
-- nodejs - v20.17.0
-- npm - 10.8.3
+- nodejs - v22.14.0
+- npm - 11.2.0
 
 ## npm commands
 

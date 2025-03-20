@@ -1,8 +1,13 @@
+import Image from "next/image";
+
 import Container from "./Container";
 
-import Link from "next/link";
+import Clock from "@/public/images/clock.webp";
+import Compas from "@/public/images/compas.webp";
+import Hat from "@/public/images/hat.webp";
+import Recorder from "@/public/images/recorder.webp";
 
-export default function Features() {
+export async function Features() {
   return (
     <div id="features" className="-mt-28 pt-28">
       <Container>
@@ -11,7 +16,7 @@ export default function Features() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-6 h-6 text-secondary"
+            className="text-secondary h-6 w-6"
           >
             <path
               fillRule="evenodd"
@@ -20,7 +25,7 @@ export default function Features() {
             />
           </svg>
 
-          <h2 className="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+          <h2 className="my-8 text-2xl font-bold text-gray-700 md:text-4xl dark:text-white">
             A technology-first approach to payments and finance
           </h2>
           <p className="text-gray-600 dark:text-gray-300">
@@ -29,11 +34,11 @@ export default function Features() {
             nam consequatur eligendi magni adipisci.
           </p>
         </div>
-        <div className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
-          <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-            <div className="relative space-y-8 py-12 p-8">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png"
+        <div className="mt-16 grid divide-x divide-y divide-gray-100 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4 dark:divide-gray-700 dark:border-gray-700">
+          <div className="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
+            <div className="relative space-y-8 p-8 py-12">
+              <Image
+                src={Compas}
                 className="w-12"
                 width="512"
                 height="512"
@@ -41,23 +46,20 @@ export default function Features() {
               />
 
               <div className="space-y-2">
-                <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                <h5 className="group-hover:text-secondary text-xl font-semibold text-gray-700 transition dark:text-white">
                   First feature
                 </h5>
                 <p className="text-gray-600 dark:text-gray-300">
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <Link
-                href="#"
-                className="flex items-center justify-between group-hover:text-secondary"
-              >
+              <a href="#" className="group-hover:text-secondary flex items-center justify-between">
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
                 >
                   <path
                     fillRule="evenodd"
@@ -65,13 +67,13 @@ export default function Features() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
-          <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-            <div className="relative space-y-8 py-12 p-8">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png"
+          <div className="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
+            <div className="relative space-y-8 p-8 py-12">
+              <Image
+                src={Recorder}
                 className="w-12"
                 width="512"
                 height="512"
@@ -79,23 +81,20 @@ export default function Features() {
               />
 
               <div className="space-y-2">
-                <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                <h5 className="group-hover:text-secondary text-xl font-semibold text-gray-700 transition dark:text-white">
                   Second feature
                 </h5>
                 <p className="text-gray-600 dark:text-gray-300">
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <Link
-                href="#"
-                className="flex items-center justify-between group-hover:text-secondary"
-              >
+              <a href="#" className="group-hover:text-secondary flex items-center justify-between">
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
                 >
                   <path
                     fillRule="evenodd"
@@ -103,13 +102,13 @@ export default function Features() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
-          <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-            <div className="relative space-y-8 py-12 p-8">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png"
+          <div className="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
+            <div className="relative space-y-8 p-8 py-12">
+              <Image
+                src={Hat}
                 className="w-12"
                 width="512"
                 height="512"
@@ -117,23 +116,20 @@ export default function Features() {
               />
 
               <div className="space-y-2">
-                <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                <h5 className="group-hover:text-secondary text-xl font-semibold text-gray-700 transition dark:text-white">
                   Third feature
                 </h5>
                 <p className="text-gray-600 dark:text-gray-300">
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <Link
-                href="#"
-                className="flex items-center justify-between group-hover:text-secondary"
-              >
+              <a href="#" className="group-hover:text-secondary flex items-center justify-between">
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
                 >
                   <path
                     fillRule="evenodd"
@@ -141,13 +137,13 @@ export default function Features() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
-          <div className="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-            <div className="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png"
+          <div className="group relative bg-gray-50 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-900">
+            <div className="relative space-y-8 p-8 py-12 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
+              <Image
+                src={Clock}
                 className="w-12"
                 width="512"
                 height="512"
@@ -155,23 +151,20 @@ export default function Features() {
               />
 
               <div className="space-y-2">
-                <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                <h5 className="group-hover:text-secondary text-xl font-semibold text-gray-700 transition dark:text-white">
                   More features
                 </h5>
                 <p className="text-gray-600 dark:text-gray-300">
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <Link
-                href="#"
-                className="flex items-center justify-between group-hover:text-secondary"
-              >
+              <a href="#" className="group-hover:text-secondary flex items-center justify-between">
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
                 >
                   <path
                     fillRule="evenodd"
@@ -179,7 +172,7 @@ export default function Features() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

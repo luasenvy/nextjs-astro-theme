@@ -1,46 +1,52 @@
+import Image from "next/image";
+
 import Container from "./Container";
 
-import Link from "next/link";
+import Airbnb from "@/public/images/clients/airbnb.svg";
+import Ge from "@/public/images/clients/ge.svg";
+import GoogleCloud from "@/public/images/clients/google-cloud.svg";
+import Google from "@/public/images/clients/google.svg";
+import Microsoft from "@/public/images/clients/microsoft.svg";
+import Netflix from "@/public/images/clients/netflix.svg";
 
-export default function HeroSection() {
+export async function HeroSection() {
   return (
     <div className="relative" id="home">
       <div
         aria-hidden="true"
         className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
       >
-        <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
-        <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+        <div className="from-primary h-56 bg-gradient-to-br to-purple-400 blur-[106px] dark:from-blue-700"></div>
+        <div className="h-32 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
       </div>
       <Container>
-        <div className="relative pt-36 ml-auto">
-          <div className="lg:w-2/3 text-center mx-auto">
-            <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">
+        <div className="relative ml-auto pt-36">
+          <div className="mx-auto text-center lg:w-2/3">
+            <h1 className="text-5xl font-bold text-balance text-gray-900 md:text-6xl xl:text-7xl dark:text-white">
               Shaping a world with{" "}
               <span className="text-primary dark:text-white">reimagination.</span>
             </h1>
             <p className="mt-8 text-gray-700 dark:text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed
-              eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem
-              harum omnis beatae ipsum soluta!
+              Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus
+              asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta!
             </p>
-            <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-              <Link
+            <div className="mt-16 flex flex-wrap justify-center gap-x-6 gap-y-4">
+              <a
                 href="#"
-                className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                className="before:bg-primary relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
               >
                 <span className="relative text-base font-semibold text-white">Get started</span>
-              </Link>
-              <Link
+              </a>
+              <a
                 href="#"
-                className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
+                className="before:bg-primary/10 relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max dark:before:border-gray-700 dark:before:bg-gray-800"
               >
-                <span className="relative text-base font-semibold text-primary dark:text-white">
+                <span className="text-primary relative text-base font-semibold dark:text-white">
                   Learn more
                 </span>
-              </Link>
+              </a>
             </div>
-            <div className="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between">
+            <div className="mt-16 hidden justify-between border-y border-gray-100 py-8 sm:flex dark:border-gray-800">
               <div className="text-left">
                 <h6 className="text-lg font-semibold text-gray-700 dark:text-white">
                   The lowest price
@@ -63,63 +69,36 @@ export default function HeroSection() {
           </div>
           <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
             <div className="p-4 grayscale transition duration-200 hover:grayscale-0">
-              <img
-                src="./images/clients/microsoft.svg"
-                className="h-12 w-auto mx-auto"
+              <Image
+                src={Microsoft}
+                className="mx-auto h-12 w-auto"
                 loading="lazy"
                 alt="client logo"
-                width=""
-                height=""
               />
             </div>
             <div className="p-4 grayscale transition duration-200 hover:grayscale-0">
-              <img
-                src="./images/clients/airbnb.svg"
-                className="h-12 w-auto mx-auto"
+              <Image
+                src={Airbnb}
+                className="mx-auto h-12 w-auto"
                 loading="lazy"
                 alt="client logo"
-                width=""
-                height=""
               />
             </div>
-            <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-              <img
-                src="./images/clients/google.svg"
-                className="h-9 w-auto m-auto"
-                loading="lazy"
-                alt="client logo"
-                width=""
-                height=""
-              />
+            <div className="flex p-4 grayscale transition duration-200 hover:grayscale-0">
+              <Image src={Google} className="m-auto h-9 w-auto" loading="lazy" alt="client logo" />
             </div>
             <div className="p-4 grayscale transition duration-200 hover:grayscale-0">
-              <img
-                src="./images/clients/ge.svg"
-                className="h-12 w-auto mx-auto"
-                loading="lazy"
-                alt="client logo"
-                width=""
-                height=""
-              />
+              <Image src={Ge} className="mx-auto h-12 w-auto" loading="lazy" alt="client logo" />
             </div>
-            <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-              <img
-                src="./images/clients/netflix.svg"
-                className="h-8 w-auto m-auto"
-                loading="lazy"
-                alt="client logo"
-                width=""
-                height=""
-              />
+            <div className="flex p-4 grayscale transition duration-200 hover:grayscale-0">
+              <Image src={Netflix} className="m-auto h-8 w-auto" loading="lazy" alt="client logo" />
             </div>
             <div className="p-4 grayscale transition duration-200 hover:grayscale-0">
-              <img
-                src="./images/clients/google-cloud.svg"
-                className="h-12 w-auto mx-auto"
+              <Image
+                src={GoogleCloud}
+                className="mx-auto h-12 w-auto"
                 loading="lazy"
                 alt="client logo"
-                width=""
-                height=""
               />
             </div>
           </div>

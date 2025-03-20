@@ -7,7 +7,7 @@ A page template built with astro and tailwindcss using tailus blocks.
 ![Tailus astro based theme](./public/astrolus-light.png)
 ![Tailus astro based dark theme](./public/astrolus-dark.png)
 
-[Astrolus Theme](https://github.com/Tailus-UI/astro-theme) for [Next.js](https://nextjs.org/)<sub>(14+ App Router)</sub>
+[Astrolus Theme](https://github.com/Tailus-UI/astro-theme) for [Next.js](https://nextjs.org/)<sub>(15+ App Router)</sub>
 
 ## Tested Environment
 

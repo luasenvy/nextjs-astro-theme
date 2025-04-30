@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Container from "./Container";
+import Container from "@/components/Container";
 
 import Clock from "@/public/images/clock.webp";
 import Compas from "@/public/images/compas.webp";

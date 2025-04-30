@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import Container from "./Container";
+import Container from "@/components/Container";
 
 const links = [
   {
@@ -54,12 +54,12 @@ export function AppHeader() {
                   <div
                     aria-hidden="true"
                     id="line"
-                    className="m-auto h-0.5 w-5 origin-top rounded bg-gray-950 transition duration-300 group-data-[state=active]:translate-y-1.5 group-data-[state=active]:rotate-45 dark:bg-white"
+                    className="m-auto h-0.5 w-5 origin-top rounded-sm bg-gray-950 transition duration-300 group-data-[state=active]:translate-y-1.5 group-data-[state=active]:rotate-45 dark:bg-white"
                   ></div>
                   <div
                     aria-hidden="true"
                     id="line2"
-                    className="m-auto mt-2 h-0.5 w-5 origin-bottom rounded bg-gray-950 transition duration-300 group-data-[state=active]:-translate-y-1 group-data-[state=active]:-rotate-45 dark:bg-white"
+                    className="m-auto mt-2 h-0.5 w-5 origin-bottom rounded-sm bg-gray-950 transition duration-300 group-data-[state=active]:-translate-y-1 group-data-[state=active]:-rotate-45 dark:bg-white"
                   ></div>
                 </button>
               </div>

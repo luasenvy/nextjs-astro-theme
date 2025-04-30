@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Container from "./Container";
+import Container from "@/components/Container";
 
 import avatar0 from "@/public/images/avatars/avatar-0.webp";
 import avatar1 from "@/public/images/avatars/avatar-1.webp";

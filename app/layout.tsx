@@ -1,4 +1,4 @@
-import "@/styles/global.css";
+import "@/styles/tailwind.css";
 
 import { Urbanist } from "next/font/google";
 

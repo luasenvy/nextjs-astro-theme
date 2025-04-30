@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-@theme {
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
   --color-primary : var(--color-indigo-600);
   --color-secondary : var(--color-orange-600);
   --color-info : var(--color-blue-600);

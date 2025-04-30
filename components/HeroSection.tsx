@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Container from "./Container";
+import Container from "@/components/Container";
 
 import Airbnb from "@/public/images/clients/airbnb.svg";
 import Ge from "@/public/images/clients/ge.svg";

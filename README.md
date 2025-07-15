@@ -2,10 +2,10 @@
 
 A page template built with astro and tailwindcss using tailus blocks.
 
-# nextjs-astrolus
+## nextjs-astrolus
 
-![Tailus astro based theme](./public/astrolus-light.png)
-![Tailus astro based dark theme](./public/astrolus-dark.png)
+![Tailus astro based theme](./public/astrolus-light.webp)
+![Tailus astro based dark theme](./public/astrolus-dark.webp)
 
 [Astrolus Theme](https://github.com/Tailus-UI/astro-theme) for [Next.js](https://nextjs.org/)<sub>(15+ App Router)</sub>
 

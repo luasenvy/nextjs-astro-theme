@@ -10,11 +10,11 @@ const links = [
     label: "Features",
   },
   {
-    to: "/#stats",
+    to: "/#solution",
     label: "Solution",
   },
   {
-    to: "/#testimonials",
+    to: "/#reviews",
     label: "Reviews",
   },
   {

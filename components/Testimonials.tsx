@@ -13,7 +13,7 @@ export async function Testimonials() {
     <div className="text-gray-600 dark:text-gray-300" id="reviews">
       <Container>
         <div className="mb-20 space-y-4 px-6 md:px-0">
-          <h2 className="text-center text-2xl font-bold text-gray-800 md:text-4xl dark:text-white">
+          <h2 className="text-center font-bold text-2xl text-gray-800 md:text-4xl dark:text-white">
             We have some fans.
           </h2>
         </div>
@@ -29,8 +29,8 @@ export async function Testimonials() {
                 loading="lazy"
               />
               <div>
-                <h6 className="text-lg font-medium text-gray-700 dark:text-white">Daniella Doe</h6>
-                <p className="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
+                <h6 className="font-medium text-gray-700 text-lg dark:text-white">Daniella Doe</h6>
+                <p className="text-gray-500 text-sm dark:text-gray-300">Mobile dev</p>
               </div>
             </div>
             <p className="mt-8">
@@ -52,8 +52,8 @@ export async function Testimonials() {
                 loading="lazy"
               />
               <div>
-                <h6 className="text-lg font-medium text-gray-700 dark:text-white">Jane doe</h6>
-                <p className="text-sm text-gray-500 dark:text-gray-300">Marketing</p>
+                <h6 className="font-medium text-gray-700 text-lg dark:text-white">Jane doe</h6>
+                <p className="text-gray-500 text-sm dark:text-gray-300">Marketing</p>
               </div>
             </div>
             <p className="mt-8">
@@ -73,8 +73,8 @@ export async function Testimonials() {
                 loading="lazy"
               />
               <div>
-                <h6 className="text-lg font-medium text-gray-700 dark:text-white">Yanick Doe</h6>
-                <p className="text-sm text-gray-500 dark:text-gray-300">Developer</p>
+                <h6 className="font-medium text-gray-700 text-lg dark:text-white">Yanick Doe</h6>
+                <p className="text-gray-500 text-sm dark:text-gray-300">Developer</p>
               </div>
             </div>
             <p className="mt-8">
@@ -94,8 +94,8 @@ export async function Testimonials() {
                 loading="lazy"
               />
               <div>
-                <h6 className="text-lg font-medium text-gray-700 dark:text-white">Jane Doe</h6>
-                <p className="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
+                <h6 className="font-medium text-gray-700 text-lg dark:text-white">Jane Doe</h6>
+                <p className="text-gray-500 text-sm dark:text-gray-300">Mobile dev</p>
               </div>
             </div>
             <p className="mt-8">
@@ -115,8 +115,8 @@ export async function Testimonials() {
                 loading="lazy"
               />
               <div>
-                <h6 className="text-lg font-medium text-gray-700 dark:text-white">Andy Doe</h6>
-                <p className="text-sm text-gray-500 dark:text-gray-300">Manager</p>
+                <h6 className="font-medium text-gray-700 text-lg dark:text-white">Andy Doe</h6>
+                <p className="text-gray-500 text-sm dark:text-gray-300">Manager</p>
               </div>
             </div>
             <p className="mt-8">
@@ -137,8 +137,8 @@ export async function Testimonials() {
                 loading="lazy"
               />
               <div>
-                <h6 className="text-lg font-medium text-gray-700 dark:text-white">Yanndy Doe</h6>
-                <p className="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
+                <h6 className="font-medium text-gray-700 text-lg dark:text-white">Yanndy Doe</h6>
+                <p className="text-gray-500 text-sm dark:text-gray-300">Mobile dev</p>
               </div>
             </div>
             <p className="mt-8">

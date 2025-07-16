@@ -13,14 +13,14 @@ export async function CallToAction() {
     <div className="relative py-16">
       <div
         aria-hidden="true"
-        className="absolute inset-0 m-auto grid h-max w-full grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+        className="-space-x-52 absolute inset-0 m-auto grid h-max w-full grid-cols-2 opacity-40 dark:opacity-20"
       >
-        <div className="from-primary h-56 bg-gradient-to-br to-purple-400 blur-[106px] dark:from-blue-700"></div>
+        <div className="h-56 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
         <div className="h-32 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
       </div>
       <Container>
         <div className="relative">
-          <div className="flex items-center justify-center -space-x-2">
+          <div className="-space-x-2 flex items-center justify-center">
             <Image
               loading="lazy"
               width="400"
@@ -63,26 +63,26 @@ export async function CallToAction() {
             />
           </div>
           <div className="m-auto mt-6 space-y-6 md:w-8/12 lg:w-7/12">
-            <h1 className="text-center text-4xl font-bold text-gray-800 md:text-5xl dark:text-white">
+            <h1 className="text-center font-bold text-4xl text-gray-800 md:text-5xl dark:text-white">
               Get Started now
             </h1>
-            <p className="text-center text-xl text-gray-600 dark:text-gray-300">
+            <p className="text-center text-gray-600 text-xl dark:text-gray-300">
               Be part of millions people around the world using tailus in modern User Interfaces.
             </p>
             <div className="flex flex-wrap justify-center gap-6">
               <a
                 href="#"
-                className="before:bg-primary relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                className="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
               >
-                <span className="dark:text-dark relative text-base font-semibold text-white">
+                <span className="relative font-semibold text-base text-white dark:text-dark">
                   Get Started
                 </span>
               </a>
               <a
                 href="#"
-                className="before:bg-primary/10 relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max dark:before:border-gray-700 dark:before:bg-gray-800"
+                className="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-gradient-to-b before:bg-primary/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max dark:before:border-gray-700 dark:before:bg-gray-800"
               >
-                <span className="text-primary relative text-base font-semibold dark:text-white">
+                <span className="relative font-semibold text-base text-primary dark:text-white">
                   More about
                 </span>
               </a>

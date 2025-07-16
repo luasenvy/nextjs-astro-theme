@@ -31,7 +31,7 @@ export async function Stats() {
             <Image src={Pie} alt="image" loading="lazy" className="w-full" />
           </div>
           <div className="md:7/12 lg:w-1/2">
-            <h2 className="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
+            <h2 className="font-bold text-3xl text-gray-900 md:text-4xl dark:text-white">
               Nuxt development is carried out by passionate developers
             </h2>
             <p className="my-8 text-gray-600 dark:text-gray-300">
@@ -57,7 +57,7 @@ export async function Stats() {
                   </svg>
                 </div>
                 <div className="w-5/6">
-                  <h3 className="text-lg font-semibold text-gray-700 dark:text-indigo-300">
+                  <h3 className="font-semibold text-gray-700 text-lg dark:text-indigo-300">
                     Chat Anytime
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
@@ -81,7 +81,7 @@ export async function Stats() {
                   </svg>
                 </div>
                 <div className="w-5/6">
-                  <h3 className="text-lg font-semibold text-gray-700 dark:text-teal-300">
+                  <h3 className="font-semibold text-gray-700 text-lg dark:text-teal-300">
                     Real Time Location
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">

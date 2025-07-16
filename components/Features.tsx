@@ -16,7 +16,7 @@ export async function Features() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="text-secondary h-6 w-6"
+            className="h-6 w-6 text-secondary"
           >
             <path
               fillRule="evenodd"
@@ -25,7 +25,7 @@ export async function Features() {
             />
           </svg>
 
-          <h2 className="my-8 text-2xl font-bold text-gray-700 md:text-4xl dark:text-white">
+          <h2 className="my-8 font-bold text-2xl text-gray-700 md:text-4xl dark:text-white">
             A technology-first approach to payments and finance
           </h2>
           <p className="text-gray-600 dark:text-gray-300">
@@ -46,20 +46,20 @@ export async function Features() {
               />
 
               <div className="space-y-2">
-                <h5 className="group-hover:text-secondary text-xl font-semibold text-gray-700 transition dark:text-white">
+                <h5 className="font-semibold text-gray-700 text-xl transition group-hover:text-secondary dark:text-white">
                   First feature
                 </h5>
                 <p className="text-gray-600 dark:text-gray-300">
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <a href="#" className="group-hover:text-secondary flex items-center justify-between">
+              <a href="#" className="flex items-center justify-between group-hover:text-secondary">
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  className="-translate-x-4 h-5 w-5 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
                 >
                   <path
                     fillRule="evenodd"
@@ -81,20 +81,20 @@ export async function Features() {
               />
 
               <div className="space-y-2">
-                <h5 className="group-hover:text-secondary text-xl font-semibold text-gray-700 transition dark:text-white">
+                <h5 className="font-semibold text-gray-700 text-xl transition group-hover:text-secondary dark:text-white">
                   Second feature
                 </h5>
                 <p className="text-gray-600 dark:text-gray-300">
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <a href="#" className="group-hover:text-secondary flex items-center justify-between">
+              <a href="#" className="flex items-center justify-between group-hover:text-secondary">
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  className="-translate-x-4 h-5 w-5 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
                 >
                   <path
                     fillRule="evenodd"
@@ -116,20 +116,20 @@ export async function Features() {
               />
 
               <div className="space-y-2">
-                <h5 className="group-hover:text-secondary text-xl font-semibold text-gray-700 transition dark:text-white">
+                <h5 className="font-semibold text-gray-700 text-xl transition group-hover:text-secondary dark:text-white">
                   Third feature
                 </h5>
                 <p className="text-gray-600 dark:text-gray-300">
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <a href="#" className="group-hover:text-secondary flex items-center justify-between">
+              <a href="#" className="flex items-center justify-between group-hover:text-secondary">
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  className="-translate-x-4 h-5 w-5 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
                 >
                   <path
                     fillRule="evenodd"
@@ -151,20 +151,20 @@ export async function Features() {
               />
 
               <div className="space-y-2">
-                <h5 className="group-hover:text-secondary text-xl font-semibold text-gray-700 transition dark:text-white">
+                <h5 className="font-semibold text-gray-700 text-xl transition group-hover:text-secondary dark:text-white">
                   More features
                 </h5>
                 <p className="text-gray-600 dark:text-gray-300">
                   Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
                 </p>
               </div>
-              <a href="#" className="group-hover:text-secondary flex items-center justify-between">
+              <a href="#" className="flex items-center justify-between group-hover:text-secondary">
                 <span className="text-sm">Read more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                  className="-translate-x-4 h-5 w-5 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
                 >
                   <path
                     fillRule="evenodd"

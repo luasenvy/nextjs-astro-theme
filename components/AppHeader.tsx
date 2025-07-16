@@ -30,7 +30,7 @@ export function AppHeader() {
     <header>
       <nav
         id="nav"
-        className="group absolute z-10 w-full border-b border-black/5 lg:border-transparent dark:border-white/5"
+        className="group absolute z-10 w-full border-black/5 border-b lg:border-transparent dark:border-white/5"
         data-state={isToggled ? "active" : ""}
       >
         <Container>
@@ -39,16 +39,16 @@ export function AppHeader() {
               <a href="/#home" aria-label="logo" className="flex items-center space-x-2">
                 <div aria-hidden="true" className="flex space-x-1">
                   <div className="size-4 rounded-full bg-gray-900 dark:bg-white"></div>
-                  <div className="bg-primary h-6 w-2"></div>
+                  <div className="h-6 w-2 bg-primary"></div>
                 </div>
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">Astrolus</span>
+                <span className="font-bold text-2xl text-gray-900 dark:text-white">Astrolus</span>
               </a>
 
               <div className="relative flex max-h-10 items-center lg:hidden">
                 <button
                   aria-label="humburger"
                   id="hamburger"
-                  className="relative -mr-6 p-6 duration-300 active:scale-95"
+                  className="-mr-6 relative p-6 duration-300 active:scale-95"
                   onClick={() => setIsToggled((prev) => !prev)}
                 >
                   <div
@@ -59,7 +59,7 @@ export function AppHeader() {
                   <div
                     aria-hidden="true"
                     id="line2"
-                    className="m-auto mt-2 h-0.5 w-5 origin-bottom rounded-sm bg-gray-950 transition duration-300 group-data-[state=active]:-translate-y-1 group-data-[state=active]:-rotate-45 dark:bg-white"
+                    className="group-data-[state=active]:-translate-y-1 group-data-[state=active]:-rotate-45 m-auto mt-2 h-0.5 w-5 origin-bottom rounded-sm bg-gray-950 transition duration-300 dark:bg-white"
                   ></div>
                 </button>
               </div>
@@ -82,7 +82,7 @@ export function AppHeader() {
                     <a
                       key={`link-${i}`}
                       href={link.to}
-                      className="hover:text-primary block transition md:px-4 dark:hover:text-white"
+                      className="block transition hover:text-primary md:px-4 dark:hover:text-white"
                       onClick={() => setIsToggled((prev) => !prev)}
                     >
                       <span>{link.label}</span>
@@ -91,10 +91,10 @@ export function AppHeader() {
                   <a
                     href="https://tailtips.dev"
                     target="_blank"
-                    className="hover:text-primary flex gap-2 font-semibold text-gray-700 transition md:px-4 dark:text-white dark:hover:text-white"
+                    className="flex gap-2 font-semibold text-gray-700 transition hover:text-primary md:px-4 dark:text-white dark:hover:text-white"
                   >
                     <span>TailwindCSS Tips</span>
-                    <span className="bg-primary/20 flex rounded-full border px-2 py-0.5 text-xs tracking-wider text-purple-700 dark:bg-white/10 dark:text-orange-300">
+                    <span className="flex rounded-full border bg-primary/20 px-2 py-0.5 text-purple-700 text-xs tracking-wider dark:bg-white/10 dark:text-orange-300">
                       New
                     </span>
                   </a>
@@ -104,9 +104,9 @@ export function AppHeader() {
               <div className="mt-12 lg:mt-0">
                 <a
                   href="/register"
-                  className="before:bg-primary relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                  className="relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                 >
-                  <span className="relative text-sm font-semibold text-white"> Get Started</span>
+                  <span className="relative font-semibold text-sm text-white"> Get Started</span>
                 </a>
               </div>
             </div>

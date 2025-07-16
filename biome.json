@@ -1,0 +1,99 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": ["**", "!.next/**", "!.git/**", "!.husky/**", "!node_modules/**"],
+    "experimentalScannerIgnores": [".next", ".git", ".husky", "node_modules"]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 100,
+    "attributePosition": "auto",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "expand": "auto",
+    "useEditorconfig": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "nursery": {
+        "useSortedClasses": {
+          "level": "warn",
+          "fix": "safe",
+          "options": {}
+        }
+      },
+      "recommended": false,
+      "complexity": {
+        "noArguments": "error",
+        "noUselessTypeConstraint": "error"
+      },
+      "correctness": {
+        "noConstAssign": "off",
+        "noGlobalObjectCalls": "off",
+        "noInvalidBuiltinInstantiation": "off",
+        "noInvalidConstructorSuper": "off",
+        "noSetterReturn": "off",
+        "noUndeclaredVariables": "off",
+        "noUnreachable": "off",
+        "noUnreachableSuper": "off",
+        "noUnusedVariables": "error"
+      },
+      "style": {
+        "noCommonJs": "error",
+        "noNamespace": "error",
+        "useArrayLiterals": "error",
+        "useAsConstAssertion": "error",
+        "useBlockStatements": "off",
+        "useConst": "error"
+      },
+      "suspicious": {
+        "noClassAssign": "off",
+        "noDuplicateClassMembers": "off",
+        "noDuplicateObjectKeys": "off",
+        "noDuplicateParameters": "off",
+        "noExplicitAny": "error",
+        "noExtraNonNullAssertion": "error",
+        "noFunctionAssign": "off",
+        "noImportAssign": "off",
+        "noMisleadingInstantiator": "error",
+        "noRedeclare": "off",
+        "noUnsafeDeclarationMerging": "error",
+        "noUnsafeNegation": "off",
+        "noVar": "error",
+        "noWith": "off",
+        "useGetterReturn": "off",
+        "useNamespaceKeyword": "error"
+      }
+    }
+  },
+  "html": {
+    "formatter": {
+      "enabled": true,
+      "selfCloseVoidElements": "always"
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
+}

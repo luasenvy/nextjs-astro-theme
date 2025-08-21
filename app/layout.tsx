@@ -17,7 +17,7 @@ const urbanist = Urbanist({
   fallback: ["sans-serif"],
 });
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en">
       <body className={`bg-white dark:bg-gray-900 ${urbanist.className}`}>

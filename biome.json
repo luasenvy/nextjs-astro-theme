@@ -5,10 +5,17 @@
     "clientKind": "git",
     "useIgnoreFile": false
   },
+  "css": {
+    "formatter": {
+      "enabled": true
+    },
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!.next/**", "!.git/**", "!.husky/**", "!node_modules/**"],
-    "experimentalScannerIgnores": [".next", ".git", ".husky", "node_modules"]
+    "includes": ["**", "!.next/**", "!.git/**", "!.husky/**", "!node_modules/**"]
   },
   "formatter": {
     "enabled": true,
@@ -81,11 +88,6 @@
     "formatter": {
       "enabled": true,
       "selfCloseVoidElements": "always"
-    }
-  },
-  "css": {
-    "formatter": {
-      "enabled": true
     }
   },
   "assist": {

@@ -13,14 +13,14 @@ export async function CallToAction() {
     <div className="relative py-16">
       <div
         aria-hidden="true"
-        className="-space-x-52 absolute inset-0 m-auto grid h-max w-full grid-cols-2 opacity-40 dark:opacity-20"
+        className="absolute inset-0 m-auto grid h-max w-full grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
       >
         <div className="h-56 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
         <div className="h-32 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
       </div>
       <Container>
         <div className="relative">
-          <div className="-space-x-2 flex items-center justify-center">
+          <div className="flex items-center justify-center -space-x-2">
             <Image
               loading="lazy"
               width="400"

@@ -48,7 +48,7 @@ export function AppHeader() {
                 <button
                   aria-label="humburger"
                   id="hamburger"
-                  className="-mr-6 relative p-6 duration-300 active:scale-95"
+                  className="relative -mr-6 p-6 duration-300 active:scale-95"
                   onClick={() => setIsToggled((prev) => !prev)}
                 >
                   <div
@@ -59,7 +59,7 @@ export function AppHeader() {
                   <div
                     aria-hidden="true"
                     id="line2"
-                    className="group-data-[state=active]:-translate-y-1 group-data-[state=active]:-rotate-45 m-auto mt-2 h-0.5 w-5 origin-bottom rounded-sm bg-gray-950 transition duration-300 dark:bg-white"
+                    className="m-auto mt-2 h-0.5 w-5 origin-bottom rounded-sm bg-gray-950 transition duration-300 group-data-[state=active]:-translate-y-1 group-data-[state=active]:-rotate-45 dark:bg-white"
                   ></div>
                 </button>
               </div>
